@@ -579,6 +579,39 @@ video {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -649,6 +682,10 @@ video {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -666,6 +703,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .h-10 {
   height: 2.5rem;
@@ -691,8 +731,29 @@ video {
 .h-px {
   height: 1px;
 }
+.h-screen {
+  height: 100vh;
+}
+.h-full {
+  height: 100%;
+}
+.h-max {
+  height: max-content;
+}
 .max-h-screen {
   max-height: 100vh;
+}
+.max-h-max {
+  max-height: max-content;
+}
+.max-h-\[\] {
+  max-height: ;
+}
+.max-h-\[64rem\] {
+  max-height: 64rem;
+}
+.max-h-\[40rem\] {
+  max-height: 40rem;
 }
 .min-h-\[80px\] {
   min-height: 80px;
@@ -715,11 +776,32 @@ video {
 .w-full {
   width: 100%;
 }
+.w-1 {
+  width: 0.25rem;
+}
+.w-1\/2 {
+  width: 50%;
+}
 .min-w-\[8rem\] {
   min-width: 8rem;
 }
 .max-w-lg {
   max-width: 32rem;
+}
+.max-w-\[\] {
+  max-width: ;
+}
+.max-w-\[64\] {
+  max-width: 64;
+}
+.max-w-\[64rem\] {
+  max-width: 64rem;
+}
+.max-w-\[40rem\] {
+  max-width: 40rem;
+}
+.max-w-\[70rem\] {
+  max-width: 70rem;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -875,6 +957,17 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-card {
+  background-color: hsl(var(--card));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 .fill-current {
   fill: currentColor;
@@ -1525,6 +1618,14 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
 
   .md\:max-w-\[420px\] {
     max-width: 420px;

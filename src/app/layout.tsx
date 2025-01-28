@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template:"%s | bugbook",
-    default:"bugbook"
+    template: "%s | bugbook",
+    default: "bugbook",
   },
   description: "the social media app for powernerds",
 };
