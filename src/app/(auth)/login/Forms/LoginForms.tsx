@@ -44,7 +44,7 @@ export default function FormLogin() {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>username</FormLabel>
+              <FormLabel className="font-IRANX">نام کاربری</FormLabel>
               <FormControl>
                 <Input placeholder="inter username" {...field} />
               </FormControl>
@@ -56,8 +56,8 @@ export default function FormLogin() {
           control={form.control}
           name="password"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>password </FormLabel>
+            <FormItem className="mt-5">
+              <FormLabel>رمز عبور </FormLabel>
               <FormControl>
                 <Input placeholder="inter password" {...field} />
               </FormControl>
@@ -66,7 +66,7 @@ export default function FormLogin() {
           )}
         />
         <Button type="submit" className="w-full mt-4">
-          {ispending ? "penfing" : "login"}
+          {ispending ? "پردازش" : "ورود"}
         </Button>
       </form>
     </FormProvider>
